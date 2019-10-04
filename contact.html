@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <h1>Contact us</h1>
+    <hr />
+    <form action="contact.html" method="POST">
+      <p>
+        Nombre:
+        <input type="text" name="name" required="true" />
+      </p>
+      <p>
+        Telefono
+        <input type="tel" name="phone" />
+      </p>
+      <p>
+        Edad
+        <input type="number" name="age" min="18" max="30" />
+      </p>
+      <p>
+        Raza
+        <select name="ethnicity">
+          <option>Hispano</option>
+          <option>Caucasico</option>
+          <option>Africano</option>
+          <option>Asiatico</option>
+        </select>
+      </p>
+      <p>
+        Email
+        <input type="email" name="email" required="true" />
+      </p>
+      <p>
+        <input type="checkbox" name="adult" />
+        Eres mayor de edad ?
+      </p>
+      <p>
+        <input type="radio" name="gender" value="H"/> Hombre
+        <input type="radio" name="gender" value="M"/> Mujer
+      </p>
+      <p>
+        Escribe tus comentarios
+        <br />
+        <textarea name="comments" rows="10"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+      </p>
+    </form>
+  </body>
+</html>
