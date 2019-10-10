@@ -63,3 +63,36 @@ img {
   border-width: 2px;
   border-color: #eeeeee;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-item {
+  border: 1px solid tomato;
+  padding: 20px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.sidebar {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 4;
+}
+
+.ad {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
